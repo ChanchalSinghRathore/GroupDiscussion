@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATG World</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <header class="bg-light py-3  style=" background-color: #e3f2fd;>
+        <div class="container navfirst">
+            <div class="row">
+                <div class="col-md-3 logois">
+                    <a href="#" class="text-dark">
+                        <img src="logo - Copy.png" alt="ATG World Logo" width="150">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <form class="form-inline searchis">
+                        <input class="form-control mr-sm-3 col-md-7 rounded-pill border-0" type="search"
+                            placeholder=" Search for your favorite groups in ATG" aria-label="Search"
+                            style="background: #F2F2F2 ">
+                        <i class="bi bi-search"></i>
+                    </form>
+                </div>
+                <div class="col-md-3 text-right">
+                    <svg  class="hugeicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                      </svg>
+                    <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Create account. It’s free!
+                    </a>
+                    <div class="modal fade" id="createAccountModal" tabindex="-1" role="dialog"
+                        aria-labelledby="createAccountModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                   
+                                    <h5 class="modal-title" id="createAccountModalLabel">Create Account</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="firstName" class="col-form-label">First Name:</label>
+                                            <input type="text" class="form-control" id="firstName">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lastName" class="col-form-label">Last Name:</label>
+                                            <input type="text" class="form-control" id="lastName">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email" class="col-form-label">Email:</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password" class="col-form-label">Password:</label>
+                                            <input type="password" class="form-control" id="password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="confirmPassword" class="col-form-label">Confirm
+                                                Password:</label>
+                                            <input type="password" class="form-control" id="confirmPassword">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Create Account</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="text-white ">
+            <img class="col-md-12 img" src="hero-image.jpg" class="img-fluid" alt="...">
+            <div class="text-center text">
+                <h1>Computer Engineering</h1>
+                <p>142,765 Computer Engineers follow this</p>
+            </div>
+        </section>
+
+        <nav class="navbar py-5">
+            <div class="container">
+                <div>
+                    <ul class="nav-links ">
+                        <li class="mb-0 font-weight-normal">All Posts (32)</li>
+                        <li class="thor"><a href="#">Article</a></li>
+                        <li class="thor"><a href="#">Education</a></li>
+                        <li class="thor"><a href="#">Event</a></li>
+                        <li class="thor"><a href="#">Job</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-write thor">Write a Post</button>
+                    <button class="btn btn-join" data-toggle="modal" data-target="#loginModal">Join Group</button>
+                    
+                    
+
+                    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+                        aria-labelledby="loginModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" placeholder="Email"
+                                                required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="password"
+                                                placeholder="Password" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Login</button>
+                                        <p class="forgot-password">Forgot password?</p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <div class="post-card">
+                        <div class="post-content">
+                            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5WRpfioDSOwGTsjjKiQlZvbn29BZETl9LCpnHuVAPaYGP5-4u"
+                                alt="Post Image" class="post-image border-primary">
+                            <div class="container coco m-3 p-1">
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                        height="24" color="#000000" fill="none">
+                                        <path
+                                            d="M13.2852 19.3647L5.82243 20.7506C4.39103 21.0164 3.67534 21.1493 3.26303 20.737C2.85072 20.3246 2.98362 19.6089 3.24943 18.1774L4.63523 10.7143C4.85745 9.51762 4.96856 8.91925 5.36302 8.5577C5.75749 8.19616 6.47889 8.1256 7.9217 7.98448C9.31227 7.84847 10.6283 7.37177 12 6L18 12.0005C16.6283 13.3723 16.1513 14.6874 16.0151 16.0781C15.8738 17.5211 15.8031 18.2426 15.4416 18.637C15.0801 19.0314 14.4818 19.1425 13.2852 19.3647Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                        <path
+                                            d="M11 15.2105C10.4405 15.1197 9.92895 14.8763 9.52632 14.4737M9.52632 14.4737C9.12368 14.0711 8.8803 13.5595 8.78947 13M9.52632 14.4737L4 20"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                        <path
+                                            d="M12 6C12.7123 4.9491 13.6771 3.1812 15.1065 3.01098C16.0822 2.89479 16.8906 3.70312 18.5072 5.31978L18.6802 5.49277C20.2969 7.10944 21.1052 7.91777 20.989 8.8935C20.8188 10.3229 19.0509 11.2877 18 12"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>Article </span>
+                                <h3>What if famous brands had regular fonts? Meet RegulaBrands!</h3>
+                                <p>I've worked in UX for the better part of a decade. From now on, I plan to rei...</p>
+                            </div>
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-user">
+                                <img src="Rectangle 4.png" alt="User Image" class="post-user-image">
+                                <span class="post-user-name">Sarthak Kamra</span>
+                            </div>
+                            <div class="post-actions">
+                                <i class="fas fa-eye"></i> <span class="post-views">1.4k views</span>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-card">
+
+                        <div class="post-content">
+                            <img src="logo3.png" alt="Post Image" class="post-image">
+                            <div class="container coco m-2 p-1">
+
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                        height="24" color="#000000" fill="none">
+                                        <path
+                                            d="M4.49843 4.99955C3.19503 4.97763 2.56968 5.23447 2.22294 6.14209C2.01241 6.69319 2 7.29629 2 7.88628V17.9996C2.10783 18.6343 2.28792 19.0554 2.74232 19.3996C3.48302 19.9606 4.46716 20.0373 5.38129 20.2028C7.3857 20.5658 9.12918 21.1806 11.9937 21.9996M19.489 4.99955C20.0658 4.95026 20.4998 4.97684 20.8427 5.13038C22.2148 5.74469 21.9874 7.7616 21.9874 9.26574V16.9996C21.9944 17.5968 21.9559 18.0614 21.8719 18.4318C21.5518 19.8426 19.7432 20.0194 18.3213 20.2817C16.5435 20.6096 14.6465 21.1789 11.9937 21.9996M11.9937 21.9996V14.9996"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M11.9929 11.9995C14.7526 11.9995 16.9898 9.76093 16.9898 6.99951C16.9898 4.23809 14.7526 1.99951 11.9929 1.99951M11.9929 11.9995C9.23326 11.9995 6.99609 9.76093 6.99609 6.99951C6.99609 4.23809 9.23326 1.99951 11.9929 1.99951M11.9929 11.9995C13.0969 11.9995 13.9917 9.76093 13.9917 6.99951C13.9917 4.23809 13.0969 1.99951 11.9929 1.99951M11.9929 11.9995C10.889 11.9995 9.99421 9.76093 9.99421 6.99951C9.99421 4.23809 10.889 1.99951 11.9929 1.99951"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg> Education</span>
+                                <h3>Tax Benefits for Investment under National Pension Scheme launched by Government
+                                </h3>
+                                <p>I've worked in UX for the better part of a decade. From now on, I plan to rei...</p>
+                            </div>
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-user">
+                                <img src="Rectangle 3.png" alt="User Image" class="post-user-image">
+                                <span class="post-user-name">Sarah West</span>
+                            </div>
+                            <div class="post-actions">
+                                <i class="fas fa-eye"></i> <span class="post-views">1.4k views</span>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card mb-4 shadow-sm">
+                        <img src="Rectangle 5.png" class="card-img-top" alt="Event Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Meetup</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">Finance & Investment Elite Social Mixer @Lujiazui
+                            </h4>
+                            <p class="card-text">
+                                <span class="text-muted"><i class="far fa-calendar-alt"></i> Fri, 12 Oct, 2018</span>
+                                <span class="text-muted"><i class="fas fa-map-marker-alt"></i> Ahmedabad, India</span>
+                            </p>
+                            <a href="#" class="btn btn-primary">Visit Website</a>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+
+                                <small class="text-muted"><i class="far fa-eye"></i> 1.4k views</small>
+                                <a href="#" class="btn btn-sm btn-outline-secondary"><i
+                                        class="fas fa-share-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-user">
+                                <img src="Rectangle 7.png" alt="User Image" class="post-user-image">
+                                <span class="post-user-name">Ronal Jones</span>
+                            </div>
+                            <div class="post-actions">
+                                <i class="fas fa-eye"></i> <span class="post-views">1.4k views</span>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-4 shadow-sm">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Job</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Software Developer</h6>
+                            <p class="card-text">
+                                <span class="text-muted"><i class="fas fa-briefcase"></i> Innovaccer Analytics Private
+                                    Ltd.</span>
+                                <span class="text-muted"><i class="fas fa-map-marker-alt"></i> Noida, India</span>
+                            </p>
+                            <button type="button" class="btn btn-primary">Apply on TimesJobs</button>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+
+                                <small class="text-muted"><i class="far fa-eye"></i> 1.4k views</small>
+                                <a href="#" class="btn btn-sm btn-outline-secondary"><i
+                                        class="fas fa-share-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-user">
+                                <img src="Rectangle 8.png" alt="User Image" class="post-user-image">
+                                <span class="post-user-name">Joseph Gray</span>
+                            </div>
+                            <div class="post-actions">
+                                <i class="fas fa-eye"></i> <span class="post-views">1.4k views</span>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-4">
+
+                    <div class="location-input">
+                        <span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>
+
+                        <span class="location-text"> Noida, India</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            margin-left="12px" color="#000000" fill="none">
+                            <path
+                                d="M15.2141 5.98239L16.6158 4.58063C17.39 3.80646 18.6452 3.80646 19.4194 4.58063C20.1935 5.3548 20.1935 6.60998 19.4194 7.38415L18.0176 8.78591M15.2141 5.98239L6.98023 14.2163C5.93493 15.2616 5.41226 15.7842 5.05637 16.4211C4.70047 17.058 4.3424 18.5619 4 20C5.43809 19.6576 6.94199 19.2995 7.57889 18.9436C8.21579 18.5877 8.73844 18.0651 9.78375 17.0198L18.0176 8.78591M15.2141 5.98239L18.0176 8.78591"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M11 20H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="location-info">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                        </svg>
+                        Your location will help us serve better
+                        and extend a personalised experience.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+        <script>
+            $('#createAccountModal').modal('show');
+        </script>
+
+</body>
+
+</html>
